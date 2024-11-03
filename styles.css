@@ -1,0 +1,55 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.video-player {
+    width: 600px;
+    margin: 50px auto;
+    background-color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: opacity 0.5s ease;
+    opacity: 0; /* Initially hidden */
+}
+
+.controls button {
+    margin-right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    color: white;
+}
+
+.controls input[type="range"] {
+    flex: 1;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#current-time,
+#duration {
+    color: white;
+    margin-left: 10px;
+}
